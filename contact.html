@@ -76,19 +76,42 @@
            </div>
             <div class="titlepage text_align_center" style="width: 100%; text-align: center;">
                <div class="titlepage text_align_center" style="width: 100%;">
-                  <form id="request" class="main_form" style="width: 100%;">
+                  <!-- <form id="request" class="main_form" style="width: 100%;"> //https://formspree.io/f/mlevlrwg  -->
+                     <form id="request" class="main_form" style="width: 100%;" action="https://formspree.io/f/mlevlrwg" method="POST">
                      <div class="row" >
+                        <label style="margin-left: 20px;">Full Name & Surname</label>
                         <div class="col-md-12 ">
-                           <input class="contactus" placeholder="Name" type="type" name=" Name"> 
+                           <input class="contactus" placeholder="Name" type="type" name="Name & Surname"> 
                         </div>
+                        <label style="margin-left: 20px;">Email Address</label>
                         <div class="col-md-12">
-                           <input class="contactus" placeholder="Email" type="type" name="Email">                          
+                           <input type="email" class="contactus" placeholder="Email" type="type" name="Email Address">                          
                         </div>
+                        <label style="margin-left: 20px;">Phone Number</label>
                         <div class="col-md-12">
-                           <input class="contactus" placeholder="Phone" type="type" name="Phone Number">                          
+                           <input type="number" class="contactus" placeholder="Phone" type="type" name="Phone Number">                          
                         </div>
+                        <label style="margin-left: 20px;">Physical Address</label>
                         <div class="col-md-12">
-                           <textarea class="textarea" placeholder="Message" type="type" Message="Name"></textarea>
+                           <input type="text" class="contactus" placeholder="Address" type="type" name="Physical Address">                          
+                        </div>
+                        <label style="margin-left: 20px;">Dye Color</label>
+                        <div class="col-md-12">
+                           <select name="Dye Color" class="contactus" id="Dye Color">
+                              <option value="Fabric Black Dye">Fabric Black Dye</option>
+                              <option value="Fabric Blue Dye">Fabric Blue Dye</option>
+                              <option value="Fabric Navy Dye">Fabric Navy Dye</option>
+                              <option value="Fabric Grey Dye">Fabric Grey Dye</option>
+                              <option value="Fabric Olive Green Dye">Fabric Olive Green Dye</option>
+                            </select>                        
+                        </div>
+                        <label style="margin-left: 20px;">When Do You Need Your Order</label>
+                        <div class="col-md-12">
+                           <input type="date" class="contactus" placeholder="Date" type="type" name="Expected Order Date">                          
+                        </div>
+                        <label style="margin-left: 20px;">Message</label>
+                        <div class="col-md-12">
+                           <textarea class="textarea" placeholder="Message" type="type" Message="Message" name="Message"></textarea>
                         </div>
                         <div class="col-md-12">
                            <button class="send_btn">Send</button>
@@ -123,6 +146,7 @@
                            </a>
                         </li>
                         </ul>
+                        
                      </div>
                      <ul class="social_icon text_align_center">
                         <li> <a href="Javascript:void(0)"><i class="fa fa-facebook-f"></i></a></li>
